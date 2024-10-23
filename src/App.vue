@@ -93,8 +93,10 @@ export default {
 
 <template>
   <h2>{{ count }}</h2>
-  <button @click="inc">increment</button>
-  <button @click="dec">decrement</button>
+  <button @click="inc(1)">increment 1</button>
+  <button @click="inc(5)">increment 5</button>
+  <button @click="dec(1)">decrement 1</button>
+  <button @click="dec(5)">decrement 5</button>
   <button @click="showResetConfirmation">reset</button>
 </template>
 
@@ -109,11 +111,11 @@ export default {
     };
   },
   methods: {
-    inc() {
-      this.count++;
+    inc(num) {
+      this.count += num;
     },
-    dec() {
-      this.count--;
+    dec(num) {
+      this.count -= num;
     },
 
     showResetConfirmation() {
