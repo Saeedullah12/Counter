@@ -2,7 +2,7 @@
 
 This is a simple Vue.js counter app that allows users to increment, decrement, and reset the count. When a user clicks the reset button, a confirmation dialog appears, allowing them to either reset the count to 0 or cancel the action and keep the previous count.
 
-Features
+## Features
 Increment: Increase the count by 1 each time the increment button is clicked.
 Decrement: Decrease the count by 1 each time the decrement button is clicked.
 Reset Confirmation: When the reset button is clicked, the user is asked to confirm whether they want to reset the count to 0. If confirmed, the count is reset. If declined, the count remains unchanged.
