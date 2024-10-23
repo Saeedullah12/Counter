@@ -6,46 +6,36 @@ This is a simple Vue.js counter app that allows users to increment, decrement, a
 Increment: Increase the count by 1 each time the increment button is clicked.
 Decrement: Decrease the count by 1 each time the decrement button is clicked.
 Reset Confirmation: When the reset button is clicked, the user is asked to confirm whether they want to reset the count to 0. If confirmed, the count is reset. If declined, the count remains unchanged.
-Project Setup
-Installation
+## Project Setup
+### Installation :
 Clone the repository:
+git clone https://github.com/Saeedullah12/Counter.git
 
-bash
-Copy code
-git clone https://github.com/your-username/vue-counter-reset.git
 Navigate into the project folder:
+cd counter
 
-bash
-Copy code
-cd vue-counter-reset
 Install the necessary dependencies:
-
-bash
-Copy code
 npm install
-Start the development server:
-
-bash
-Copy code
-npm run serve
+Start the development server
+npm run dev
 Open your browser and visit http://localhost:8080 to view the app.
 
-Code Explanation
-Template
+## Code Explanation
+### Template
 The template consists of:
 
 A display of the current count.
 Three buttons: increment, decrement, and reset.
-html
-Copy code
+html 
 <template>
   <h2>{{ count }}</h2>
   <button @click="inc">increment</button>
   <button @click="dec">decrement</button>
   <button @click="showResetConfirmation">reset</button>
 </template>
-Script
-Data properties:
+
+### Script
+#### Data properties:
 
 count: The current count value.
 previousCount: Stores the previous count before a reset confirmation.
@@ -57,7 +47,7 @@ dec(): Decreases the count by 1.
 showResetConfirmation(): Asks the user for confirmation before resetting the count.
 reset(): Resets the count to 0 after confirmation.
 javascript
-Copy code
+
 <script>
 export default {
   name: "app",
@@ -93,7 +83,8 @@ export default {
   },
 };
 </script>
-Usage
+
+### Usage
 Click the increment button to increase the count.
 Click the decrement button to decrease the count.
 Click the reset button to open a confirmation dialog. If you click "OK", the count will be reset to 0. If you click "Cancel", the count will remain as is.
