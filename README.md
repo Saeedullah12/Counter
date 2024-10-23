@@ -28,7 +28,7 @@ A display of the current count.
 Three buttons: increment, decrement, and reset.
 html 
 <template>
-  <h2>{{ count }}</h2>
+  <h5>{{ count }}</h5>
   <button @click="inc">increment</button>
   <button @click="dec">decrement</button>
   <button @click="showResetConfirmation">reset</button>
